@@ -1,0 +1,123 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url(./Night_sky_Background_Greg.jpg);
+  background-size: cover;
+}
+/******************************************
+/* LAYOUT - Top Section
+/*******************************************/
+
+.topSection {
+  /* border: 1px solid red; */
+  max-width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.topSection > div {
+  /* border: 1px solid blue; */
+  height: 70%;
+  width: 50%;
+}
+.topSection h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+.topSection h1 + label {
+  color: white;
+  font-size: 1.5rem;
+}
+.topSection Input {
+  margin-top: 10px;
+  border: none;
+  font-size: 1.3rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+}
+.topSection Input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.topSection button {
+  font-size: 1.1rem;
+  height: 3rem;
+  width: 40%;
+  border-radius: 5px;
+  margin: 10px 0px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/******************************************
+/* LAYOUT - Results Section
+/*******************************************/
+
+.resultsSection {
+  /* border: 1px solid purple; */
+  height: 65vh;
+  max-width: 100%;
+}
+
+.resultSectionTop {
+  display: flex;
+  /* border: 1px solid green; */
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultSectionTop > span {
+  display: inline-block;
+  margin: 0px 40px;
+}
+.resultSectionTop > h2 span {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 2rem;
+  color: white;
+}
+
+.resultsSectionBottom {
+  /* border: 1px solid red; */
+  display: flex;
+  height: 90%;
+}
+.resultsSectionBottom figure {
+  width: 50%;
+  /* border: 2px solid black; */
+  height: 100%;
+  background: url(../ariesLogo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.resultsSectionBottom article {
+  font-size: 1.3rem;
+  color: white;
+  width: 50%;
+  height: 100%;
+}
+.resultsSectionBottom article dl {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.resultsSectionBottom article p {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  margin-top: 1rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.hidden {
+  display: none;
+}
